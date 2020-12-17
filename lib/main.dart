@@ -16,13 +16,30 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        /*child: Image(
-          // image: NetworkImage('https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'),
-          //Local Image
-          image: AssetImage('assets/background.jpg'),
-        )*/
-        // child: Image.asset('assets/img1.jpg'),
-        child: Image.network('https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'),
+        /*child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.lightBlue,
+          size :50.0
+        ),*/
+        /*child: FlatButton(
+          onPressed: () {
+            print('You Clicked me!');
+          },
+          child: Text('Click Me'),
+          color: Colors.lightBlue,
+        ),*/
+        /*child: RaisedButton.icon(
+          onPressed: (){},
+          icon: Icon(Icons.mail),
+          label: Text('Mail me'),
+          color: Colors.amber,),*/
+        child: IconButton(
+          onPressed: () {
+            print('You clicked me!');
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: ()=>{},
